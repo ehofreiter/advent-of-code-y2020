@@ -1,0 +1,117 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           advent-of-code-y2020
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/advent-of-code-y2020#readme>
+homepage:       https://github.com/githubuser/advent-of-code-y2020#readme
+bug-reports:    https://github.com/githubuser/advent-of-code-y2020/issues
+author:         Eric W. Hofreiter
+maintainer:     example@example.com
+copyright:      2021 Eric W. Hofreiter
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/advent-of-code-y2020
+
+library
+  exposed-modules:
+      AOC2020.Common
+      AOC2020.CoordMap
+      AOC2020.CoordVec
+      AOC2020.Day1
+      AOC2020.Day10
+      AOC2020.Day11
+      AOC2020.Day11Part2
+      AOC2020.Day12
+      AOC2020.Day12Part2
+      AOC2020.Day13
+      AOC2020.Day13Part2
+      AOC2020.Day14
+      AOC2020.Day14Part2
+      AOC2020.Day15
+      AOC2020.Day16
+      AOC2020.Day17
+      AOC2020.Day17Part2
+      AOC2020.Day18
+      AOC2020.Day18Part2
+      AOC2020.Day19
+      AOC2020.Day1Part2
+      AOC2020.Day2
+      AOC2020.Day20
+      AOC2020.Day21
+      AOC2020.Day22
+      AOC2020.Day22Part2
+      AOC2020.Day23
+      AOC2020.Day23Part2
+      AOC2020.Day23Part2MV
+      AOC2020.Day24
+      AOC2020.Day25
+      AOC2020.Day3
+      AOC2020.Day4
+      AOC2020.Day5
+      AOC2020.Day6
+      AOC2020.Day7
+      AOC2020.Day8
+      AOC2020.Day9
+  other-modules:
+      Paths_advent_of_code_y2020
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , indexed-traversable
+    , lens
+    , linear
+    , parsec
+    , split
+    , vector
+  default-language: Haskell2010
+
+executable advent-of-code-y2020-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_advent_of_code_y2020
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      advent-of-code-y2020
+    , base >=4.7 && <5
+    , containers
+    , indexed-traversable
+    , lens
+    , linear
+    , parsec
+    , split
+    , vector
+  default-language: Haskell2010
+
+test-suite advent-of-code-y2020-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_advent_of_code_y2020
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      advent-of-code-y2020
+    , base >=4.7 && <5
+    , containers
+    , indexed-traversable
+    , lens
+    , linear
+    , parsec
+    , split
+    , vector
+  default-language: Haskell2010
